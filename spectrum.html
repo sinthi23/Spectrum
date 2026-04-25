@@ -146,298 +146,54 @@
       <section id="upcoming" class="card">
         <h3><i class="fa-solid fa-bullhorn"></i> Upcoming Events</h3>
         <p class="section-intro">
-          Click any event to view details, registration guidelines, and submit
-          your registration.
+          Click View Details to open a dedicated event page with full
+          description and registration access.
         </p>
 
         <div class="upcoming-grid" aria-label="Upcoming Event List">
-          <article class="upcoming-card active" data-event-id="event-ignite">
+          <article class="upcoming-card">
             <span class="upcoming-chip">May 10, 2026</span>
             <h4>IgniteX Vision Forum</h4>
             <p>
               Leadership stories, real industry case studies, and practical
               execution planning.
             </p>
-            <button
-              class="btn btn-primary event-open-btn"
-              type="button"
-              data-event-id="event-ignite"
+            <a
+              class="btn btn-primary event-open-link"
+              href="event.php?event=ignite"
             >
               View Details
-            </button>
+            </a>
           </article>
 
-          <article class="upcoming-card" data-event-id="event-quantum">
+          <article class="upcoming-card">
             <span class="upcoming-chip">May 24, 2026</span>
             <h4>Quantum Craft Hacknight</h4>
             <p>
               Collaborative design-to-code sprint to build impactful student
               solutions overnight.
             </p>
-            <button
-              class="btn btn-primary event-open-btn"
-              type="button"
-              data-event-id="event-quantum"
+            <a
+              class="btn btn-primary event-open-link"
+              href="event.php?event=quantum"
             >
               View Details
-            </button>
+            </a>
           </article>
 
-          <article class="upcoming-card" data-event-id="event-atlas">
+          <article class="upcoming-card">
             <span class="upcoming-chip">June 07, 2026</span>
             <h4>Atlas Career Launchpad</h4>
             <p>
               Mentorship-focused preparation for portfolios, interviews, and
               strategic career growth.
             </p>
-            <button
-              class="btn btn-primary event-open-btn"
-              type="button"
-              data-event-id="event-atlas"
+            <a
+              class="btn btn-primary event-open-link"
+              href="event.php?event=atlas"
             >
               View Details
-            </button>
-          </article>
-        </div>
-
-        <div class="event-details-wrap">
-          <article class="event-detail active" id="event-ignite">
-            <h4>IgniteX Vision Forum</h4>
-            <p>
-              A one-day signature forum where students learn how to lead teams,
-              pitch ideas, and execute with confidence through keynote talks,
-              mini workshops, and practical planning sessions.
-            </p>
-            <h5>Registration Guidelines</h5>
-            <ul>
-              <li>Only KUET students are eligible for this event.</li>
-              <li>Please use an active email address for updates.</li>
-              <li>
-                Limited seats are available; early registration is encouraged.
-              </li>
-            </ul>
-
-            <form class="registration-form" method="POST" action="register.php">
-              <input
-                type="hidden"
-                name="event_title"
-                value="IgniteX Vision Forum"
-              />
-              <div class="form-grid">
-                <label>
-                  Full Name
-                  <input type="text" name="full_name" required />
-                </label>
-                <label>
-                  Email
-                  <input type="email" name="email" required />
-                </label>
-                <label>
-                  Department
-                  <input
-                    type="text"
-                    name="department"
-                    placeholder="CSE"
-                    required
-                  />
-                </label>
-                <label>
-                  Academic Year
-                  <select name="academic_year" required>
-                    <option value="">Select</option>
-                    <option>1st Year</option>
-                    <option>2nd Year</option>
-                    <option>3rd Year</option>
-                    <option>4th Year</option>
-                  </select>
-                </label>
-                <label class="full-width">
-                  Motivation
-                  <textarea
-                    name="motivation"
-                    rows="3"
-                    required
-                    placeholder="Tell us why you want to join this event."
-                  ></textarea>
-                </label>
-              </div>
-              <div class="form-actions">
-                <button type="button" class="btn btn-ghost preview-btn">
-                  Preview Input
-                </button>
-                <button
-                  type="submit"
-                  class="btn btn-primary submit-btn"
-                  disabled
-                >
-                  Confirm & Register
-                </button>
-              </div>
-              <div class="confirmation-box" hidden>
-                <h5>Input Confirmation</h5>
-                <dl class="confirmation-list"></dl>
-                <p>Verify your information, then click Confirm & Register.</p>
-              </div>
-            </form>
-          </article>
-
-          <article class="event-detail" id="event-quantum">
-            <h4>Quantum Craft Hacknight</h4>
-            <p>
-              A high-energy team experience where members brainstorm, design,
-              and prototype solutions for real campus challenges in one focused
-              night.
-            </p>
-            <h5>Registration Guidelines</h5>
-            <ul>
-              <li>You may join individually or with a 2-3 member team.</li>
-              <li>Bring your own laptop and student ID card.</li>
-              <li>Participants must attend from opening to final demo.</li>
-            </ul>
-
-            <form class="registration-form" method="POST" action="register.php">
-              <input
-                type="hidden"
-                name="event_title"
-                value="Quantum Craft Hacknight"
-              />
-              <div class="form-grid">
-                <label>
-                  Full Name
-                  <input type="text" name="full_name" required />
-                </label>
-                <label>
-                  Email
-                  <input type="email" name="email" required />
-                </label>
-                <label>
-                  Department
-                  <input
-                    type="text"
-                    name="department"
-                    placeholder="CSE"
-                    required
-                  />
-                </label>
-                <label>
-                  Academic Year
-                  <select name="academic_year" required>
-                    <option value="">Select</option>
-                    <option>1st Year</option>
-                    <option>2nd Year</option>
-                    <option>3rd Year</option>
-                    <option>4th Year</option>
-                  </select>
-                </label>
-                <label class="full-width">
-                  Motivation
-                  <textarea
-                    name="motivation"
-                    rows="3"
-                    required
-                    placeholder="Tell us why you want to join this event."
-                  ></textarea>
-                </label>
-              </div>
-              <div class="form-actions">
-                <button type="button" class="btn btn-ghost preview-btn">
-                  Preview Input
-                </button>
-                <button
-                  type="submit"
-                  class="btn btn-primary submit-btn"
-                  disabled
-                >
-                  Confirm & Register
-                </button>
-              </div>
-              <div class="confirmation-box" hidden>
-                <h5>Input Confirmation</h5>
-                <dl class="confirmation-list"></dl>
-                <p>Verify your information, then click Confirm & Register.</p>
-              </div>
-            </form>
-          </article>
-
-          <article class="event-detail" id="event-atlas">
-            <h4>Atlas Career Launchpad</h4>
-            <p>
-              A practical career acceleration program featuring portfolio
-              critique, mock interview clinics, and direct alumni mentorship.
-            </p>
-            <h5>Registration Guidelines</h5>
-            <ul>
-              <li>
-                Prepare your current CV or portfolio draft before joining.
-              </li>
-              <li>Bring one key career goal to discuss during the session.</li>
-              <li>
-                Follow-up mentoring slots are assigned by registration order.
-              </li>
-            </ul>
-
-            <form class="registration-form" method="POST" action="register.php">
-              <input
-                type="hidden"
-                name="event_title"
-                value="Atlas Career Launchpad"
-              />
-              <div class="form-grid">
-                <label>
-                  Full Name
-                  <input type="text" name="full_name" required />
-                </label>
-                <label>
-                  Email
-                  <input type="email" name="email" required />
-                </label>
-                <label>
-                  Department
-                  <input
-                    type="text"
-                    name="department"
-                    placeholder="CSE"
-                    required
-                  />
-                </label>
-                <label>
-                  Academic Year
-                  <select name="academic_year" required>
-                    <option value="">Select</option>
-                    <option>1st Year</option>
-                    <option>2nd Year</option>
-                    <option>3rd Year</option>
-                    <option>4th Year</option>
-                  </select>
-                </label>
-                <label class="full-width">
-                  Motivation
-                  <textarea
-                    name="motivation"
-                    rows="3"
-                    required
-                    placeholder="Tell us why you want to join this event."
-                  ></textarea>
-                </label>
-              </div>
-              <div class="form-actions">
-                <button type="button" class="btn btn-ghost preview-btn">
-                  Preview Input
-                </button>
-                <button
-                  type="submit"
-                  class="btn btn-primary submit-btn"
-                  disabled
-                >
-                  Confirm & Register
-                </button>
-              </div>
-              <div class="confirmation-box" hidden>
-                <h5>Input Confirmation</h5>
-                <dl class="confirmation-list"></dl>
-                <p>Verify your information, then click Confirm & Register.</p>
-              </div>
-            </form>
+            </a>
           </article>
         </div>
       </section>
@@ -532,7 +288,5 @@
         <p>© 2026 Spectrum KUET Club. All rights reserved.</p>
       </div>
     </footer>
-
-    <script src="script.js"></script>
   </body>
 </html>
