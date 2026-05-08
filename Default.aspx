@@ -1,0 +1,244 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs"
+Inherits="SpectrumWebForms.DefaultPage" MasterPageFile="~/Site.Master" %>
+<asp:Content
+  ID="TitleContent"
+  ContentPlaceHolderID="TitleContent"
+  runat="server"
+>
+  Spectrum KUET Club
+</asp:Content>
+<asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" runat="server">
+  <main class="container">
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <span class="hero-tag">Future Leaders Start Here</span>
+        <h2>Build Skills, Spark Innovation, Lead with Purpose</h2>
+        <p>
+          Spectrum is a Professional Skill Development Club of KUET. SPECTRUM
+          provides a guided platform to nurture creativity, innovation, passion
+          and efficiency for future leaders.
+        </p>
+        <div class="hero-actions">
+          <a href="#about" class="btn btn-primary">Explore Spectrum</a>
+          <a href="#events" class="btn btn-ghost">Upcoming Events</a>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <article class="stat-card">
+          <i class="fa-solid fa-users"></i>
+          <h3>350+</h3>
+          <p>Active Members</p>
+        </article>
+        <article class="stat-card">
+          <i class="fa-solid fa-calendar-check"></i>
+          <h3>48</h3>
+          <p>Events Conducted</p>
+        </article>
+        <article class="stat-card">
+          <i class="fa-solid fa-user-graduate"></i>
+          <h3>120+</h3>
+          <p>Successful Alumni</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="card">
+      <h3><i class="fa-solid fa-circle-info"></i> About Spectrum</h3>
+      <p class="section-intro">
+        Spectrum KUET is a long-term skill development platform where students
+        build professional confidence through practical events, team-based
+        execution, and mentorship. We focus on communication, leadership, design
+        thinking, technical growth, and career readiness so members can perform
+        effectively in campus leadership, internships, and industry projects.
+      </p>
+
+      <div class="feature-grid">
+        <article>
+          <i class="fa-solid fa-lightbulb"></i>
+          <h4>Creative Thinking</h4>
+          <p>
+            Design challenges and innovation labs to solve meaningful problems.
+          </p>
+        </article>
+        <article>
+          <i class="fa-solid fa-laptop-code"></i>
+          <h4>Technical Mastery</h4>
+          <p>
+            Hands-on skill tracks in coding, design systems, and project
+            delivery.
+          </p>
+        </article>
+        <article>
+          <i class="fa-solid fa-people-group"></i>
+          <h4>Leadership Growth</h4>
+          <p>
+            Team-driven execution that builds confidence, communication, and
+            vision.
+          </p>
+        </article>
+        <article>
+          <i class="fa-solid fa-hand-holding-dollar"></i>
+          <h4>Structured Event Funding</h4>
+          <p>
+            Paid registrations help us provide better logistics, speakers, and
+            learning materials for every participant.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="events" class="card">
+      <h3><i class="fa-solid fa-calendar-days"></i> Featured Events</h3>
+      <div class="grid-3">
+        <article class="info-card">
+          <img
+            src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=900&q=80"
+            alt="Students at innovation workshop"
+          />
+          <h4>Innovation Sprint 2026</h4>
+          <p>3-day ideation and prototype challenge for KUET students.</p>
+        </article>
+        <article class="info-card">
+          <img
+            src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=900&q=80"
+            alt="Audience listening to seminar"
+          />
+          <h4>Leadership Bootcamp</h4>
+          <p>Interactive sessions on teamwork, communication, and execution.</p>
+        </article>
+        <article class="info-card">
+          <img
+            src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=900&q=80"
+            alt="Students collaborating on laptops"
+          />
+          <h4>Career Readiness Week</h4>
+          <p>Portfolio reviews, mock interviews, and mentorship from alumni.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="upcoming" class="card">
+      <h3><i class="fa-solid fa-bullhorn"></i> Upcoming Events</h3>
+      <p class="section-intro">
+        Click View Details to open a dedicated event page with full description
+        and registration access.
+      </p>
+
+      <div class="upcoming-grid" aria-label="Upcoming Event List">
+        <article class="upcoming-card">
+          <span class="upcoming-chip">May 10, 2026</span>
+          <h4>IgniteX Vision Forum</h4>
+          <p>
+            IgniteX Vision Forum, hosted by Spectrum, is a National Business
+            Case Competition designed to tackle real world business challenges
+            and craft innovative and actionable solutions.
+          </p>
+          <a
+            class="btn btn-primary event-open-link"
+            href="Event.aspx?event=ignite"
+          >
+            View Details
+          </a>
+        </article>
+
+        <article class="upcoming-card">
+          <span class="upcoming-chip">May 24, 2026</span>
+          <h4>Quantum Craft Hacknight</h4>
+          <p>
+            Quantum Craft Hacknight is a continuous learning initiative by
+            Spectrum aimed atstrengthening core competencies of executives and
+            preparing them for real-world leadership and problem-solving roles.
+          </p>
+          <a
+            class="btn btn-primary event-open-link"
+            href="Event.aspx?event=quantum"
+          >
+            View Details
+          </a>
+        </article>
+
+        <article class="upcoming-card">
+          <span class="upcoming-chip">June 07, 2026</span>
+          <h4>Atlas Career Launchpad</h4>
+          <p>
+            Atlas Career Launchpad is a flagship learning and case-solving
+            platform by SPECTRUM, designed to prepare students for real-world
+            tech-business challenges.
+          </p>
+          <a
+            class="btn btn-primary event-open-link"
+            href="Event.aspx?event=atlas"
+          >
+            View Details
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section id="members" class="card">
+      <h3><i class="fa-solid fa-medal"></i> Core Members</h3>
+      <div class="grid-3 people-grid">
+        <article class="person-card">
+          <img
+            src="https://images.unsplash.com/photo-1504593811423-6dd665756598?auto=format&fit=crop&w=500&q=80"
+            alt="Portrait of Arafat Rahman"
+          />
+          <h4>Arafat Rahman</h4>
+          <p>President</p>
+        </article>
+        <article class="person-card">
+          <img
+            src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=500&q=80"
+            alt="Portrait of Nusaiba Karim"
+          />
+          <h4>Nusaiba Karim</h4>
+          <p>General Secretary</p>
+        </article>
+        <article class="person-card">
+          <img
+            src="https://images.unsplash.com/photo-1463453091185-61582044d556?auto=format&fit=crop&w=500&q=80"
+            alt="Portrait of Tamim Hossain"
+          />
+          <h4>Tamim Hossain</h4>
+          <p>Creative Lead</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="alumni" class="card">
+      <h3><i class="fa-solid fa-user-graduate"></i> Notable Alumni</h3>
+      <div class="grid-3 people-grid">
+        <article class="person-card">
+          <img
+            src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&w=500&q=80"
+            alt="Portrait of Shafin Ahmed"
+          />
+          <h4>Shafin Ahmed</h4>
+          <p>Software Engineer, Grameenphone IT</p>
+        </article>
+        <article class="person-card">
+          <img
+            src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=500&q=80"
+            alt="Portrait of Tasnia Noor"
+          />
+          <h4>Tasnia Noor</h4>
+          <p>Product Designer, StartUp Dhaka</p>
+        </article>
+        <article class="person-card">
+          <img
+            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=500&q=80"
+            alt="Portrait of Mahir Chowdhury"
+          />
+          <h4>Mahir Chowdhury</h4>
+          <p>Research Assistant, KUET Robotics Lab</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="card">
+      <h3><i class="fa-solid fa-envelope-open-text"></i> Contact</h3>
+      <p>Email: spectrum@kuet.ac.bd</p>
+      <p>Campus: KUET, Khulna, Bangladesh</p>
+    </section>
+  </main>
+</asp:Content>
