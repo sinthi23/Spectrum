@@ -13,7 +13,18 @@ Inherits="SpectrumWebForms.EventDetailsPage" MasterPageFile="~/Site.Master" %>
       width: min(980px, 92%);
       margin: 2rem auto;
     }
-
+    .event-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      text-decoration: none;
+      color: #f5fbff;
+      background: rgba(255, 255, 255, 0.14);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      padding: 0.5rem 0.8rem;
+      border-radius: 999px;
+      font-weight: 700;
+    }
     .event-panel {
       margin-top: 1rem;
       border-radius: 22px;
@@ -44,7 +55,59 @@ Inherits="SpectrumWebForms.EventDetailsPage" MasterPageFile="~/Site.Master" %>
       color: #ffd89f;
       font-weight: 700;
     }
-
+    .summary {
+      margin-bottom: 1rem;
+      max-width: 64ch;
+      color: #d6ecff;
+    }
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.65rem;
+      margin-bottom: 1rem;
+    }
+    .meta-item {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 12px;
+      padding: 0.6rem 0.75rem;
+    }
+    .meta-item strong {
+      display: block;
+      color: #ffd89f;
+      margin-bottom: 0.2rem;
+      font-size: 0.9rem;
+    }
+    .meta-item span {
+      color: #e8f5ff;
+    }
+    .event-panel h2 {
+      font-family: "Sora", sans-serif;
+      margin: 1.1rem 0 0.5rem;
+      font-size: 1.12rem;
+      color: #ffffff;
+    }
+    .event-panel ul {
+      margin: 0;
+      padding-left: 1.1rem;
+    }
+    .event-panel li {
+      margin-bottom: 0.45rem;
+      color: #e8f5ff;
+    }
+    .register-btn {
+      margin-top: 1.1rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 800;
+      background: linear-gradient(135deg, #ff7f50, #ffad62);
+      border-radius: 12px;
+      padding: 0.72rem 1.05rem;
+      box-shadow: 0 12px 24px rgba(255, 127, 80, 0.35);
+    }
     @media (max-width: 720px) {
       .meta-grid {
         grid-template-columns: 1fr;
