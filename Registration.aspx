@@ -14,12 +14,201 @@ Inherits="SpectrumWebForms.RegistrationPage" MasterPageFile="~/Site.Master" %>
       margin: 2rem auto;
     }
 
+    .registration-back {
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      padding: 0.5rem 1rem;
+      background-color: #f0f0f0;
+      color: #333;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 0.95rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .registration-back:hover {
+      background-color: #e0e0e0;
+    }
+
+    .registration-card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+    }
+
+    .registration-card h1 {
+      color: #333;
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+    }
+
+    .event-title {
+      font-size: 1.2rem;
+      color: #555;
+      margin: 0.5rem 0;
+      font-weight: 600;
+    }
+
+    .event-meta {
+      font-size: 0.95rem;
+      color: #777;
+      margin-bottom: 1.5rem;
+    }
+
+    .error-list {
+      background-color: #fee;
+      border: 1px solid #faa;
+      border-radius: 4px;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      color: #c00;
+    }
+
+    .error-list h2 {
+      color: #c00;
+      font-size: 1.1rem;
+      margin-top: 0;
+    }
+
+    .error-list ul {
+      margin: 0.5rem 0 0 1.5rem;
+      padding: 0;
+    }
+
+    .error-list li {
+      margin: 0.3rem 0;
+    }
+
+    .success-box {
+      background-color: #efe;
+      border: 1px solid #afa;
+      border-radius: 4px;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      color: #060;
+    }
+
+    .success-box p {
+      margin: 0.5rem 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .grid label {
+      display: flex;
+      flex-direction: column;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .grid label.full {
+      grid-column: 1 / -1;
+    }
+
+    .grid input,
+    .grid select,
+    .grid textarea {
+      margin-top: 0.5rem;
+      padding: 0.75rem;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-family: inherit;
+      font-size: 1rem;
+    }
+
+    .grid input:focus,
+    .grid select:focus,
+    .grid textarea:focus {
+      outline: none;
+      border-color: #4caf50;
+      box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+    }
+
+    .grid textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .submit-btn {
+      background-color: #4caf50;
+      color: white;
+      padding: 0.75rem 2rem;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .submit-btn:hover {
+      background-color: #45a049;
+    }
+
+    .submit-btn:active {
+      background-color: #3d8b40;
+    }
+
+    dl {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+
+    dt {
+      font-weight: 600;
+      color: #333;
+    }
+
+    dd {
+      margin: 0;
+      color: #555;
+    }
+
+    dd.motivation {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+
+    .actions {
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #eee;
+    }
+
+    .actions a {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background-color: #2196f3;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .actions a:hover {
+      background-color: #0b7dda;
+    }
+
     @media (max-width: 680px) {
       .grid {
         grid-template-columns: 1fr;
       }
       dl {
         grid-template-columns: 1fr;
+      }
+      .registration-card {
+        padding: 1rem;
+      }
+      .registration-card h1 {
+        font-size: 1.5rem;
       }
     }
   </style>
