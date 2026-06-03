@@ -125,83 +125,39 @@ Inherits="SpectrumWebForms.DefaultPage" MasterPageFile="~/Site.Master" %>
       </p>
 
       <div class="upcoming-grid" aria-label="Upcoming Event List">
-        <article class="upcoming-card">
-          <span class="upcoming-chip">May 10, 2026</span>
-          <h4>IgniteX Vision Forum</h4>
-          <p>
-            IgniteX Vision Forum, hosted by Spectrum, is a National Business
-            Case Competition designed to tackle real world business challenges
-            and craft innovative and actionable solutions.
-          </p>
-          <a
-            class="btn btn-primary event-open-link"
-            href="Event.aspx?event=ignite"
-          >
-            View Details
-          </a>
-        </article>
-
-        <article class="upcoming-card">
-          <span class="upcoming-chip">May 24, 2026</span>
-          <h4>Quantum Craft Hacknight</h4>
-          <p>
-            Quantum Craft Hacknight is a continuous learning initiative by
-            Spectrum aimed atstrengthening core competencies of executives and
-            preparing them for real-world leadership and problem-solving roles.
-          </p>
-          <a
-            class="btn btn-primary event-open-link"
-            href="Event.aspx?event=quantum"
-          >
-            View Details
-          </a>
-        </article>
-
-        <article class="upcoming-card">
-          <span class="upcoming-chip">June 07, 2026</span>
-          <h4>Atlas Career Launchpad</h4>
-          <p>
-            Atlas Career Launchpad is a flagship learning and case-solving
-            platform by SPECTRUM, designed to prepare students for real-world
-            tech-business challenges.
-          </p>
-          <a
-            class="btn btn-primary event-open-link"
-            href="Event.aspx?event=atlas"
-          >
-            View Details
-          </a>
-        </article>
+        <asp:Repeater ID="UpcomingEventsRepeater" runat="server">
+          <ItemTemplate>
+            <article class="upcoming-card">
+              <span class="upcoming-chip"><%# Eval("Date") %></span>
+              <h4><%# Eval("Title") %></h4>
+              <p><%# Eval("Summary") %></p>
+              <a
+                class="btn btn-primary event-open-link"
+                href='Event.aspx?event=<%# Eval("Slug") %>'
+              >
+                View Details
+              </a>
+            </article>
+          </ItemTemplate>
+        </asp:Repeater>
       </div>
     </section>
 
     <section id="members" class="card">
       <h3><i class="fa-solid fa-medal"></i> Core Members</h3>
       <div class="grid-3 people-grid">
-        <article class="person-card">
-          <img
-            src="https://images.unsplash.com/photo-1504593811423-6dd665756598?auto=format&fit=crop&w=500&q=80"
-            alt="Portrait of Arafat Rahman"
-          />
-          <h4>Arafat Rahman</h4>
-          <p>President</p>
-        </article>
-        <article class="person-card">
-          <img
-            src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=500&q=80"
-            alt="Portrait of Nusaiba Karim"
-          />
-          <h4>Nusaiba Karim</h4>
-          <p>General Secretary</p>
-        </article>
-        <article class="person-card">
-          <img
-            src="https://images.unsplash.com/photo-1463453091185-61582044d556?auto=format&fit=crop&w=500&q=80"
-            alt="Portrait of Tamim Hossain"
-          />
-          <h4>Tamim Hossain</h4>
-          <p>Creative Lead</p>
-        </article>
+        <asp:Repeater ID="MembersRepeater" runat="server">
+          <ItemTemplate>
+            <article class="person-card">
+              <img
+                src='<%# Eval("PhotoUrl") %>'
+                alt='Portrait of <%# Eval("FullName") %>'
+              />
+              <h4><%# Eval("FullName") %></h4>
+              <p><%# Eval("Position") %></p>
+            </article>
+          </ItemTemplate>
+        </asp:Repeater>
       </div>
     </section>
 
