@@ -90,30 +90,63 @@ Inherits="SpectrumWebForms.DefaultPage" MasterPageFile="~/Site.Master" %>
     <section id="events" class="card">
       <h3><i class="fa-solid fa-calendar-days"></i> Featured Events</h3>
       <div class="grid-3">
-        <article class="info-card">
+        <a
+          href="Event.aspx?event=innovation2025"
+          class="info-card"
+          style="
+            text-decoration: none;
+            color: inherit;
+            cursor: pointer;
+            transition:
+              transform 0.3s ease,
+              box-shadow 0.3s ease;
+          "
+        >
           <img
-            src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=900&q=80"
+            src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=900&q=80"
             alt="Students at innovation workshop"
           />
-          <h4>Innovation Sprint 2026</h4>
-          <p>3-day ideation and prototype challenge for KUET students.</p>
-        </article>
-        <article class="info-card">
+          <h4>Innovation Sprint 2025</h4>
+          <p>3-day ideation and prototype challenge from past event.</p>
+        </a>
+        <a
+          href="Event.aspx?event=leadership2025"
+          class="info-card"
+          style="
+            text-decoration: none;
+            color: inherit;
+            cursor: pointer;
+            transition:
+              transform 0.3s ease,
+              box-shadow 0.3s ease;
+          "
+        >
           <img
-            src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=900&q=80"
+            src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80"
             alt="Audience listening to seminar"
           />
-          <h4>Leadership Bootcamp</h4>
+          <h4>Leadership Bootcamp 2025</h4>
           <p>Interactive sessions on teamwork, communication, and execution.</p>
-        </article>
-        <article class="info-card">
+        </a>
+        <a
+          href="Event.aspx?event=atlas"
+          class="info-card"
+          style="
+            text-decoration: none;
+            color: inherit;
+            cursor: pointer;
+            transition:
+              transform 0.3s ease,
+              box-shadow 0.3s ease;
+          "
+        >
           <img
             src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=900&q=80"
             alt="Students collaborating on laptops"
           />
-          <h4>Career Readiness Week</h4>
+          <h4>Atlas Career Launchpad</h4>
           <p>Portfolio reviews, mock interviews, and mentorship from alumni.</p>
-        </article>
+        </a>
       </div>
     </section>
 
