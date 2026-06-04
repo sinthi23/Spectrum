@@ -113,6 +113,55 @@ Inherits="SpectrumWebForms.EventDetailsPage" MasterPageFile="~/Site.Master" %>
         grid-template-columns: 1fr;
       }
     }
+    .winners-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+    .winner-card {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 203, 132, 0.35);
+      border-radius: 12px;
+      padding: 1rem;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    .winner-card:hover {
+      background: rgba(255, 203, 132, 0.12);
+      border-color: rgba(255, 203, 132, 0.65);
+      transform: translateY(-4px);
+    }
+    .winner-badge {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .winner-badge.gold {
+      filter: drop-shadow(0 0 8px rgba(255, 203, 132, 0.6));
+    }
+    .winner-badge.silver {
+      filter: drop-shadow(0 0 8px rgba(192, 192, 192, 0.4));
+    }
+    .winner-badge.bronze {
+      filter: drop-shadow(0 0 8px rgba(205, 127, 50, 0.4));
+    }
+    .winner-card strong {
+      color: #ffd89f;
+      display: block;
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+    }
+    .winner-card p {
+      margin: 0;
+      color: #e8f5ff;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    @media (max-width: 900px) {
+      .winners-grid {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </asp:Content>
 <asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" runat="server">
@@ -151,6 +200,73 @@ Inherits="SpectrumWebForms.EventDetailsPage" MasterPageFile="~/Site.Master" %>
       <ul>
         <asp:Literal ID="GuidelinesLiteral" runat="server" />
       </ul>
+
+      <!-- Detailed Description Section -->
+      <asp:Panel ID="DetailedDescriptionPanel" runat="server" Visible="false">
+        <h2>Event Details</h2>
+        <p style="color: #d6ecff; line-height: 1.6">
+          <asp:Literal ID="DetailedDescriptionLiteral" runat="server" />
+        </p>
+      </asp:Panel>
+
+      <!-- Highlights Section -->
+      <asp:Panel ID="HighlightsPanel" runat="server" Visible="false">
+        <h2>Event Highlights</h2>
+        <ul>
+          <asp:Literal ID="HighlightsLiteral" runat="server" />
+        </ul>
+      </asp:Panel>
+
+      <!-- Sponsor Section -->
+      <asp:Panel ID="SponsorPanel" runat="server" Visible="false">
+        <h2>Sponsor</h2>
+        <p style="color: #d6ecff">
+          <strong style="color: #ffd89f">
+            <asp:Literal ID="SponsorLiteral" runat="server" />
+          </strong>
+        </p>
+      </asp:Panel>
+
+      <!-- Winners Section -->
+      <asp:Panel ID="WinnersPanel" runat="server" Visible="false">
+        <h2>Event Winners & Achievements</h2>
+        <div class="winners-grid">
+          <article class="winner-card">
+            <div class="winner-badge gold">🥇</div>
+            <strong>Champion</strong>
+            <p><asp:Literal ID="WinnerLiteral" runat="server" /></p>
+          </article>
+          <article class="winner-card">
+            <div class="winner-badge silver">🥈</div>
+            <strong>1st Runner-up</strong>
+            <p><asp:Literal ID="RunnerUpFirstLiteral" runat="server" /></p>
+          </article>
+          <article class="winner-card">
+            <div class="winner-badge bronze">🥉</div>
+            <strong>2nd Runner-up</strong>
+            <p><asp:Literal ID="RunnerUpSecondLiteral" runat="server" /></p>
+          </article>
+        </div>
+      </asp:Panel>
+
+      <!-- Participant Count Section -->
+      <asp:Panel ID="ParticipantCountPanel" runat="server" Visible="false">
+        <div
+          style="
+            margin-top: 1.5rem;
+            padding: 1rem;
+            background: rgba(255, 203, 132, 0.15);
+            border-left: 4px solid rgba(255, 203, 132, 0.55);
+            border-radius: 8px;
+          "
+        >
+          <p style="margin: 0; color: #ffe7bd">
+            <strong>Participants:</strong>
+            <asp:Literal ID="ParticipantCountLiteral" runat="server" /> students
+            attended
+          </p>
+        </div>
+      </asp:Panel>
 
       <a
         class="register-btn"
