@@ -18,5 +18,17 @@ namespace SpectrumWebForms
         protected global::System.Web.UI.WebControls.Literal FeeLiteral;
         protected global::System.Web.UI.WebControls.Literal PaymentNoteLiteral;
         protected global::System.Web.UI.WebControls.Literal GuidelinesLiteral;
+        protected global::System.Web.UI.WebControls.Panel DetailedDescriptionPanel;
+        protected global::System.Web.UI.WebControls.Literal DetailedDescriptionLiteral;
+        protected global::System.Web.UI.WebControls.Panel HighlightsPanel;
+        protected global::System.Web.UI.WebControls.Literal HighlightsLiteral;
+        protected global::System.Web.UI.WebControls.Panel SponsorPanel;
+        protected global::System.Web.UI.WebControls.Literal SponsorLiteral;
+        protected global::System.Web.UI.WebControls.Panel WinnersPanel;
+        protected global::System.Web.UI.WebControls.Literal WinnerLiteral;
+        protected global::System.Web.UI.WebControls.Literal RunnerUpFirstLiteral;
+        protected global::System.Web.UI.WebControls.Literal RunnerUpSecondLiteral;
+        protected global::System.Web.UI.WebControls.Panel ParticipantCountPanel;
+        protected global::System.Web.UI.WebControls.Literal ParticipantCountLiteral;
     }
 }

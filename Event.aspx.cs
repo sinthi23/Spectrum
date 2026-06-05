@@ -26,6 +26,47 @@ namespace SpectrumWebForms
             FeeLiteral.Text = HttpUtility.HtmlEncode(CurrentEvent.Fee);
             PaymentNoteLiteral.Text = HttpUtility.HtmlEncode(CurrentEvent.PaymentNote);
             GuidelinesLiteral.Text = BuildGuidelinesMarkup(CurrentEvent.Guidelines);
+
+            // Set new detailed fields
+            if (!string.IsNullOrEmpty(CurrentEvent.DetailedDescription))
+            {
+                DetailedDescriptionPanel.Visible = true;
+                DetailedDescriptionLiteral.Text = HttpUtility.HtmlEncode(CurrentEvent.DetailedDescription);
+            }
+
+            if (CurrentEvent.Highlights != null && CurrentEvent.Highlights.Length > 0)
+            {
+                HighlightsPanel.Visible = true;
+                HighlightsLiteral.Text = BuildGuidelinesMarkup(CurrentEvent.Highlights);
+            }
+
+            if (!string.IsNullOrEmpty(CurrentEvent.Sponsor))
+            {
+                SponsorPanel.Visible = true;
+                SponsorLiteral.Text = HttpUtility.HtmlEncode(CurrentEvent.Sponsor);
+            }
+
+            if (!string.IsNullOrEmpty(CurrentEvent.Winner))
+            {
+                WinnersPanel.Visible = true;
+                WinnerLiteral.Text = HttpUtility.HtmlEncode(CurrentEvent.Winner);
+                
+                if (!string.IsNullOrEmpty(CurrentEvent.RunnerUpFirst))
+                {
+                    RunnerUpFirstLiteral.Text = HttpUtility.HtmlEncode(CurrentEvent.RunnerUpFirst);
+                }
+
+                if (!string.IsNullOrEmpty(CurrentEvent.RunnerUpSecond))
+                {
+                    RunnerUpSecondLiteral.Text = HttpUtility.HtmlEncode(CurrentEvent.RunnerUpSecond);
+                }
+            }
+
+            if (CurrentEvent.ParticipantCount.HasValue)
+            {
+                ParticipantCountPanel.Visible = true;
+                ParticipantCountLiteral.Text = CurrentEvent.ParticipantCount.Value.ToString("N0");
+            }
         }
 
         private static string BuildGuidelinesMarkup(string[] guidelines)
