@@ -54,6 +54,9 @@
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
     <Content Include="Event.aspx" />
     <Compile Include="Event.aspx.cs">
       <DependentUpon>Event.aspx</DependentUpon>
@@ -70,6 +73,35 @@
     <Compile Include="Registration.aspx.designer.cs">
       <DependentUpon>Registration.aspx</DependentUpon>
     </Compile>
+    <Content Include="Login.aspx" />
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Content Include="AdminRegister.aspx" />
+    <Compile Include="AdminRegister.aspx.cs">
+      <DependentUpon>AdminRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminRegister.aspx.designer.cs">
+      <DependentUpon>AdminRegister.aspx</DependentUpon>
+    </Compile>
+    <Content Include="AdminPanel.aspx" />
+    <Compile Include="AdminPanel.aspx.cs">
+      <DependentUpon>AdminPanel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPanel.aspx.designer.cs">
+      <DependentUpon>AdminPanel.aspx</DependentUpon>
+    </Compile>
+    <Content Include="Logout.aspx" />
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Content Include="Site.Master" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
@@ -79,9 +111,20 @@
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
     <Compile Include="Classes\EventCatalog.cs" />
+    <Compile Include="Classes\AdminUser.cs" />
+    <Compile Include="Classes\ClubMember.cs" />
+    <Compile Include="Classes\AdminRegistrationRequest.cs" />
+    <Compile Include="Classes\DbGateway.cs" />
+    <Compile Include="Classes\DatabaseBootstrap.cs" />
+    <Compile Include="Classes\PasswordHasher.cs" />
+    <Compile Include="Classes\AdminAuthService.cs" />
+    <Compile Include="Classes\ClubMemberRepository.cs" />
+    <Compile Include="Classes\EventRepository.cs" />
+    <Compile Include="Classes\AdminPageBase.cs" />
     <Content Include="style.css" />
     <Content Include="script.js" />
     <Content Include="spectrum.html" />
+    <Content Include="DatabaseSchema.sql" />
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup />
