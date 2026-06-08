@@ -1,59 +1,88 @@
 <%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="SpectrumWebForms.SiteMaster" %>
 <!doctype html>
 <html lang="en">
-  <head runat="server">
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><asp:ContentPlaceHolder ID="TitleContent" runat="server">Spectrum KUET Club</asp:ContentPlaceHolder></title>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Sora:wght@500;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-    <link rel="stylesheet" href="style.css" />
-    <asp:ContentPlaceHolder ID="HeadContent" runat="server" />
-  </head>
-  <body>
-    <div class="bg-orb bg-orb-1" aria-hidden="true"></div>
-    <div class="bg-orb bg-orb-2" aria-hidden="true"></div>
+<head runat="server">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title><asp:ContentPlaceHolder ID="TitleContent" runat="server">Spectrum KUET Club</asp:ContentPlaceHolder></title>
 
-    <header class="header">
-      <div class="header-inner">
-        <div class="brand">
-          <div class="logo-mark" aria-hidden="true">
-            <i class="fa-solid fa-bolt"></i>
-          </div>
-          <div>
-            <h1>SPECTRUM</h1>
-            <p>Professional Skill Development Club of KUET</p>
-          </div>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Sora:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="advanced-features.css" />
+
+  <asp:ContentPlaceHolder ID="HeadContent" runat="server" />
+</head>
+
+<body>
+  
+  <div class="bg-orb bg-orb-1" aria-hidden="true"></div>
+  <div class="bg-orb bg-orb-2" aria-hidden="true"></div>
+
+  <header class="header">
+    <div class="header-inner">
+      <div class="brand">
+        <div class="logo-mark" aria-hidden="true">
+          <i class="fa-solid fa-bolt"></i>
         </div>
-
-        <nav class="nav" aria-label="Main Navigation">
-          <a href="Default.aspx#home">Home</a>
-          <a href="Default.aspx#about">About</a>
-          <a href="Default.aspx#events">Events</a>
-          <a href="Default.aspx#upcoming">Upcoming</a>
-          <a href="Default.aspx#alumni">Alumni</a>
-        </nav>
-      </div>
-    </header>
-
-    <form id="form1" runat="server">
-      <asp:ContentPlaceHolder ID="MainContent" runat="server" />
-    </form>
-
-    <footer class="footer">
-      <div class="footer-inner">
         <div>
-          <h4>Spectrum KUET</h4>
-          <p>Creativity. Innovation. Passion. Efficiency.</p>
+          <h1>SPECTRUM</h1>
+          <p>Professional Skill Development Club of KUET</p>
         </div>
-        <div class="socials" aria-label="Social Media Links">
-          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#" aria-label="Youtube"><i class="fa-brands fa-youtube"></i></a>
-        </div>
-        <p>© 2026 Spectrum KUET Club. All rights reserved.</p>
       </div>
-    </footer>
-  </body>
+
+      <div class="header-actions">
+        <div class="nav-container">
+          
+
+          <nav id="mainNav" class="nav" aria-label="Main Navigation" aria-hidden="true">
+            <a href="Default.aspx#home">Home</a>
+            <a href="Default.aspx#about">About</a>
+            <a href="Default.aspx#events">Events</a>
+            <a href="Default.aspx#upcoming">Upcoming</a>
+            <a href="Default.aspx#alumni">Alumni</a>
+            <div class="admin-menu">
+              <% if (IsAdminAuthenticated) { %>
+                <a class="admin-link admin-link--primary" href="AdminPanel.aspx">Admin Panel</a>
+                <a class="admin-link" href="Logout.aspx">Logout</a>
+              <% } else { %>
+                <a class="admin-link admin-link--primary" href="AdminPanel.aspx">Admin Panel</a>
+                <a class="admin-link" href="Login.aspx">Login</a>
+                <a class="admin-link" href="AdminRegister.aspx">Register</a>
+              <% } %>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <form id="form1" runat="server">
+    <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+  </form>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <h4>Spectrum KUET</h4>
+        <p>Creativity. Innovation. Passion. Efficiency.</p>
+      </div>
+
+      <div class="socials" aria-label="Social Media Links">
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="Youtube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+
+      <p>© 2026 Spectrum KUET Club. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="advanced-features.js"></script>
+</body>
+
+  <script src="script.js"></script>
+</body>
 </html>
