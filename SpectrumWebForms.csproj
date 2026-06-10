@@ -120,7 +120,9 @@
     <Compile Include="Classes\AdminAuthService.cs" />
     <Compile Include="Classes\ClubMemberRepository.cs" />
     <Compile Include="Classes\EventRepository.cs" />
-    <Compile Include="Classes\AdminPageBase.cs" />
+    <Compile Include="Classes\AdminPageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Content Include="style.css" />
     <Content Include="script.js" />
     <Content Include="spectrum.html" />
