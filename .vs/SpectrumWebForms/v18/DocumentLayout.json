@@ -1,0 +1,142 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\xampp\\htdocs\\Spectrum website\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C8A71A53-9A6F-4F21-83D4-2D0D4F84A1B7}|SpectrumWebForms.csproj|c:\\xampp\\htdocs\\spectrum website\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C8A71A53-9A6F-4F21-83D4-2D0D4F84A1B7}|SpectrumWebForms.csproj|solutionrelative:style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8A71A53-9A6F-4F21-83D4-2D0D4F84A1B7}|SpectrumWebForms.csproj|c:\\xampp\\htdocs\\spectrum website\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8A71A53-9A6F-4F21-83D4-2D0D4F84A1B7}|SpectrumWebForms.csproj|solutionrelative:login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8A71A53-9A6F-4F21-83D4-2D0D4F84A1B7}|SpectrumWebForms.csproj|c:\\xampp\\htdocs\\spectrum website\\classes\\clubmemberrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8A71A53-9A6F-4F21-83D4-2D0D4F84A1B7}|SpectrumWebForms.csproj|solutionrelative:classes\\clubmemberrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8A71A53-9A6F-4F21-83D4-2D0D4F84A1B7}|SpectrumWebForms.csproj|c:\\xampp\\htdocs\\spectrum website\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{C8A71A53-9A6F-4F21-83D4-2D0D4F84A1B7}|SpectrumWebForms.csproj|solutionrelative:login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8A71A53-9A6F-4F21-83D4-2D0D4F84A1B7}|SpectrumWebForms.csproj|c:\\xampp\\htdocs\\spectrum website\\databaseschema.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{C8A71A53-9A6F-4F21-83D4-2D0D4F84A1B7}|SpectrumWebForms.csproj|solutionrelative:databaseschema.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8A71A53-9A6F-4F21-83D4-2D0D4F84A1B7}|SpectrumWebForms.csproj|c:\\xampp\\htdocs\\spectrum website\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{C8A71A53-9A6F-4F21-83D4-2D0D4F84A1B7}|SpectrumWebForms.csproj|solutionrelative:script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8A71A53-9A6F-4F21-83D4-2D0D4F84A1B7}|SpectrumWebForms.csproj|c:\\xampp\\htdocs\\spectrum website\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{C8A71A53-9A6F-4F21-83D4-2D0D4F84A1B7}|SpectrumWebForms.csproj|solutionrelative:site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8A71A53-9A6F-4F21-83D4-2D0D4F84A1B7}|SpectrumWebForms.csproj|c:\\xampp\\htdocs\\spectrum website\\databaseschema.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{C8A71A53-9A6F-4F21-83D4-2D0D4F84A1B7}|SpectrumWebForms.csproj|solutionrelative:databaseschema.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClubMemberRepository.cs",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\Spectrum website\\Classes\\ClubMemberRepository.cs",
+              "RelativeDocumentMoniker": "Classes\\ClubMemberRepository.cs",
+              "ToolTip": "C:\\xampp\\htdocs\\Spectrum website\\Classes\\ClubMemberRepository.cs",
+              "RelativeToolTip": "Classes\\ClubMemberRepository.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T19:15:34.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "style.css",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\Spectrum website\\style.css",
+              "RelativeDocumentMoniker": "style.css",
+              "ToolTip": "C:\\xampp\\htdocs\\Spectrum website\\style.css",
+              "RelativeToolTip": "style.css",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-06-08T18:13:17.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login.aspx.cs",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\Spectrum website\\Login.aspx.cs",
+              "RelativeDocumentMoniker": "Login.aspx.cs",
+              "ToolTip": "C:\\xampp\\htdocs\\Spectrum website\\Login.aspx.cs",
+              "RelativeToolTip": "Login.aspx.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAgwDcAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T17:54:43.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Login.aspx",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\Spectrum website\\Login.aspx",
+              "RelativeDocumentMoniker": "Login.aspx",
+              "ToolTip": "C:\\xampp\\htdocs\\Spectrum website\\Login.aspx",
+              "RelativeToolTip": "Login.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-06-08T17:54:38.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DatabaseSchema.sql ",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\Spectrum website\\DatabaseSchema.sql",
+              "RelativeDocumentMoniker": "DatabaseSchema.sql",
+              "ToolTip": "C:\\xampp\\htdocs\\Spectrum website\\DatabaseSchema.sql",
+              "RelativeToolTip": "DatabaseSchema.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-06-08T17:53:33.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "script.js",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\Spectrum website\\script.js",
+              "RelativeDocumentMoniker": "script.js",
+              "ToolTip": "C:\\xampp\\htdocs\\Spectrum website\\script.js",
+              "RelativeToolTip": "script.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-06-08T17:42:27.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Site.Master",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\Spectrum website\\Site.Master",
+              "RelativeDocumentMoniker": "Site.Master",
+              "ToolTip": "C:\\xampp\\htdocs\\Spectrum website\\Site.Master",
+              "RelativeToolTip": "Site.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-06-08T17:42:16.058Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
