@@ -1,0 +1,6 @@
+C:\xampp\htdocs\Spectrum website\bin\SpectrumWebForms.dll
+C:\xampp\htdocs\Spectrum website\bin\SpectrumWebForms.pdb
+C:\xampp\htdocs\Spectrum website\obj\Debug\SpectrumWebForms.csproj.AssemblyReference.cache
+C:\xampp\htdocs\Spectrum website\obj\Debug\SpectrumWebForms.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\Spectrum website\obj\Debug\SpectrumWebForms.dll
+C:\xampp\htdocs\Spectrum website\obj\Debug\SpectrumWebForms.pdb
